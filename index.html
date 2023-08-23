@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Weather API</h1>
+    <main>
+      <section class="bg"></section>
+      <section class="geo">
+        <h2>Your Current Location</h2>
+      </section>
+      <section class="other-cor">
+        <h2>See other coordinates</h2>
+        <form action="">
+          <input
+            type="text"
+            class="ltd"
+            onchange="this.value; getLtd(this.value)"
+            placeholder="Enter Latitude"
+          />
+          <input
+            type="text"
+            class="long"
+            onchange="this.value; getLong(this.value)"
+            placeholder="Enter Longitude"
+          />
+          <input id="submit" type="submit" />
+        </form>
+        <p class="lgt"></p>
+        <p class="lat"></p>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
